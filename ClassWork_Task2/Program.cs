@@ -4,9 +4,11 @@
 // 2 -> 10
 
 int numb = Convert.ToInt32(Console.ReadLine());
+string numbs = string.Empty;
+
 while (numb > 0)
 {
-    Console.Write(numb % 2);  
+    numbs = numb % 2 + numbs;  
     numb = numb / 2;
 }
-Console.WriteLine();
+Console.WriteLine(numbs);
